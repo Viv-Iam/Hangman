@@ -12,6 +12,13 @@ public void doesCharMatch_isGuessCharEqualToAvailChar_true() {
 //Hangman => class hangman => object
   Hangman hangman = new Hangman();
 //assertEquals method instructs JUnit to compare two arguments
+//Checking whether hangman.doesCharMatch("e") successfully returns true
   assertEquals(true, hangman.doesCharMatch("e"));
+}
+
+@Test
+public void doesCharMatch_isGuessCharEqualToAvailChar_false() {
+  Hangman hangman = new Hangman();
+  assertEquals(false, hangman.doesCharMatch("f"));
 }
 }
