@@ -9,9 +9,9 @@ public class HangmanTest {
 //isGuessCharEqualToAvailChar description behaviour spec tests
 //true output expecting for input we provide
 public void doesCharMatch_isGuessCharEqualToAvailChar_true() {
-//Hangman => class hangman => object 
+//Hangman => class hangman => object
   Hangman hangman = new Hangman();
-
+//assertEquals method instructs JUnit to compare two arguments
   assertEquals(true, hangman.doesCharMatch("e"));
 }
 }
