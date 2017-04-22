@@ -1,5 +1,5 @@
-import org.junit.*;
-import static org.junit.Assert.*;
+import org.junit.*;//import JUnit testing library
+import static org.junit.Assert.*;//import JUnit's assertion libr
 
 public class HangmanTest {
 
