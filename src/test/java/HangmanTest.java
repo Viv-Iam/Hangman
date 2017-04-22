@@ -27,4 +27,10 @@ public void isCharGuessed_isCharEqualGussedChar_true() {
   Hangman hangman = new Hangman();
   assertEquals(true, hangman.isCharGuessed("c"));
 }
+
+@Test
+public void isCharGuessed_isCharEqualGussedChar_false() {
+  Hangman hangman = new Hangman();
+  assertEquals(false, hangman.isCharGuessed("d"));
+}
 }
