@@ -120,10 +120,11 @@ public class App {
 //     // String[] arr = myConsole.readLine();
 //     // Hangman word = new Hangman(guess, arr);
     String input = myConsole.readLine();
-     String[] two = new String[3];
+    //  String[] two = new String[3];
+    char[] two = new char['a'];
      Hangman hangman = new Hangman("finally", two);
 
-    boolean work = hangman.isAnswer(input, two);
+    boolean work = hangman.isAnswer(input);
     System.out.println(work);
   }
 }
