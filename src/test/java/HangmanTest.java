@@ -43,10 +43,12 @@ public class HangmanTest {
   //testing whether we can create a new instance of Hangman class
   @Test
   public void newHangman_createsInstance() {
+  //Creating a Hangman called hangman
   Hangman hangman = new Hangman("dry", "abc");
+  //passing two arguments if returns true then hangman is an instance of Hangman
   assertEquals(true, hangman instanceof Hangman);
 }
-
+//Confirm getAnswer() getter method is functioning
 @Test
 public void newHangman_getsAnswer_() {
   Hangman hangman = new Hangman("dry", "abc");
