@@ -54,7 +54,7 @@ public void newHangman_getsAnswer_() {
 @Test
 public void newHangman_getsGuessedLetters_() {
   Hangman hangman = new Hangman("dry", "abc");
-  assertEquals("abc", hangman.getGuessedLetter());
+  assertEquals("abc", hangman.getGuessedLetters());
 }
 
 }
