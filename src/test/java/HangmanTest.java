@@ -54,7 +54,7 @@ public void newHangman_getsAnswer_() {
   Hangman hangman = new Hangman("dry", "abc");
   assertEquals("dry", hangman.getAnswer());
 }
-
+//Confirm getGuessedLetters() getter method is functioning
 @Test
 public void newHangman_getsGuessedLetters_() {
   Hangman hangman = new Hangman("dry", "abc");
