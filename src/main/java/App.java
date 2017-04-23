@@ -114,15 +114,15 @@ public class App {
   public static void main (String[] args) {
     Console myConsole = System.console();
     System.out.println("Welcome to the game Hangman:");
-    System.out.println("Kindly guess our three letter mystrey word.");
-
+    System.out.println("Kindly guess our mystrey word.");
+    System.out.println("Hint it is a three letter word that rhymes with cry");
 //     // System.out.println("Kindly guess our three letter mystrey word.");
 //     // String[] arr = myConsole.readLine();
 //     // Hangman word = new Hangman(guess, arr);
     String input = myConsole.readLine();
     //  String[] two = new String[3];
     char[] two = new char['a'];
-     Hangman hangman = new Hangman("finally", two);
+     Hangman hangman = new Hangman("dry", two);
 
     boolean work = hangman.isAnswer(input);
     System.out.println(work);
