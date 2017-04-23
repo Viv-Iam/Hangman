@@ -67,5 +67,12 @@ public void isAnswer_whenAnswer_true() {
   assertEquals(true, hangman.isAnswer("dry"));
 }
 
+@Test
+public void isAnswer_whenAnswer_false() {
+  Hangman hangman = new Hangman ("dry", "abc");
+  assertEquals(false, hangman.isAnswer("hoow"));
+}
+
+
 
 }
