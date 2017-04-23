@@ -60,5 +60,12 @@ public void newHangman_getsGuessedLetters_() {
   Hangman hangman = new Hangman("dry", "abc");
   assertEquals("abc", hangman.getGuessedLetters());
 }
+//Make sure program identifies input matches mAnswer is true
+@Test
+public void isAnswer_whenAnswer_true() {
+  Hangman hangman = new Hangman ("dry", "abc");
+  assertEquals(true, hangman.isAnswer("dry"));
+}
+
 
 }

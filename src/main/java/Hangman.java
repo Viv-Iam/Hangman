@@ -16,4 +16,7 @@ public String getAnswer() {
 public String getGuessedLetters() {
   return "abc";
 }
+public boolean isAnswer(String input) {
+  return mAnswer == input;
+}
  }
