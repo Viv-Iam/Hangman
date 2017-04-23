@@ -121,7 +121,7 @@ public class App {
 //     // Hangman word = new Hangman(guess, arr);
     String input = myConsole.readLine();
      String[] two = new String[3];
-     Hangman hangman = new Hangman("tod", two);
+     Hangman hangman = new Hangman("finally", two);
 
     boolean work = hangman.isAnswer(input, two);
     System.out.println(work);
