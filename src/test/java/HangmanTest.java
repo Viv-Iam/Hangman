@@ -39,8 +39,16 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 public class HangmanTest {
+  @Test
 public void newHangman_createsInstance() {
   Hangman hangman = new Hangman("dry", "abc");
   assertEquals(true, hangman instanceof Hangman);
+}
+
+@Test
+public void newHangman_getsAnswer_() {
+  Hangman hangman = new Hangman("dry", "abc");
+  assertEquals("dry", hangman.getAnswer());
+
 }
 }

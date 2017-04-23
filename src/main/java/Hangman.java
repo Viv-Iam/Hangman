@@ -1,4 +1,5 @@
  public class Hangman {
+   private String mAnswer;
 // public boolean doesCharMatch(String letter) {
 //   return letter == "e";
 // }
@@ -6,6 +7,9 @@
 //   return letter == "c";
 // }
 public Hangman(String answer, String guessedLetters) {
-  
+mAnswer = answer;
+}
+public String getAnswer() {
+  return mAnswer;
 }
  }
