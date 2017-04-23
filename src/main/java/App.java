@@ -115,13 +115,15 @@ public class App {
     Console myConsole = System.console();
     System.out.println("Welcome to the game Hangman:");
     System.out.println("Kindly guess our three letter mystrey word.");
-    String guess = myConsole.readLine();
-    // System.out.println("Kindly guess our three letter mystrey word.");
-    // String[] arr = myConsole.readLine();
-    // Hangman word = new Hangman(guess, arr);
-    String[] two = {"a", "b", "c"};
-    Hangman hangman = new Hangman("guess", two);
-    boolean sijui = hangman.isAnswer(guess);
-    System.out.println(sijui);
+
+//     // System.out.println("Kindly guess our three letter mystrey word.");
+//     // String[] arr = myConsole.readLine();
+//     // Hangman word = new Hangman(guess, arr);
+    String input = myConsole.readLine();
+     String[] two = new String[3];
+     Hangman hangman = new Hangman("tod", two);
+
+    boolean work = hangman.isAnswer(input, two);
+    System.out.println(work);
   }
 }

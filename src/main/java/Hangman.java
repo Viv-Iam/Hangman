@@ -17,7 +17,14 @@ public String getAnswer() {
 public String[] getGuessedLetters() {
   return mGuessedLetters;
 }
-public boolean isAnswer(String input) {
-  return mAnswer == input;
+public boolean isAnswer(String input, String[] two) {
+
+  if (input.equals(mAnswer)){
+  return true;
+} else {
+  String[] arr = new String[1];
+   arr[0] = input;
+   return false;
+}
 }
  }
