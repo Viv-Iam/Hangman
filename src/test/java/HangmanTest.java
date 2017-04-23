@@ -35,12 +35,14 @@
 // }
 // }
 
-import org.junit.*;
-import static org.junit.Assert.*;
+import org.junit.*;//import JUnit testing library
+import static org.junit.Assert.*;//import JUnit's assertion library
 
 public class HangmanTest {
+  //annotation=> informs compiler that JUnit will be responsible for running this code
+  //testing whether we can create a new instance of Hangman class
   @Test
-public void newHangman_createsInstance() {
+  public void newHangman_createsInstance() {
   Hangman hangman = new Hangman("dry", "abc");
   assertEquals(true, hangman instanceof Hangman);
 }
