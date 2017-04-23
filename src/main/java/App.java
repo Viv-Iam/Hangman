@@ -108,3 +108,20 @@
 //         return i;
 //     }
 // }
+import java.io.Console;
+
+public class App {
+  public static void main (String[] args) {
+    Console myConsole = System.console();
+    System.out.println("Welcome to the game Hangman:");
+    System.out.println("Kindly guess our three letter mystrey word.");
+    String guess = myConsole.readLine();
+    // System.out.println("Kindly guess our three letter mystrey word.");
+    // String[] arr = myConsole.readLine();
+    // Hangman word = new Hangman(guess, arr);
+    String[] two = {"a", "b", "c"};
+    Hangman hangman = new Hangman("guess", two);
+    boolean sijui = hangman.isAnswer(guess);
+    System.out.println(sijui);
+  }
+}

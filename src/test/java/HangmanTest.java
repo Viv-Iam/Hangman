@@ -71,12 +71,12 @@ public void isAnswer_whenAnswer_true() {
   assertEquals(true, hangman.isAnswer("dry"));
 }
 //Make sure program identifies input does not match mAnswer is false
-// @Test
-// public void isAnswer_whenAnswer_false() {
-//   String[] two = {"a", "b", "c"};
-//   Hangman hangman = new Hangman ("dry", two);
-//   assertEquals(false, hangman.isAnswer("hoow"));
-// }
+@Test
+public void isAnswer_whenAnswer_false() {
+  String[] two = {"a", "b", "c"};
+  Hangman hangman = new Hangman ("dry", two);
+  assertEquals(false, hangman.isAnswer("hoow"));
+}
 
 
 
