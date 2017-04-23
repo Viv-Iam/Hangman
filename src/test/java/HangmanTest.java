@@ -49,6 +49,12 @@ public void newHangman_createsInstance() {
 public void newHangman_getsAnswer_() {
   Hangman hangman = new Hangman("dry", "abc");
   assertEquals("dry", hangman.getAnswer());
-
 }
+
+@Test
+public void newHangman_getsGuessedLetters_() {
+  Hangman hangman = new Hangman("dry", "abc");
+  assertEquals("abc", hangman.getGuessedLetter());
+}
+
 }
